@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>parody_forum</Name>
+    <ProjectGuid>7a8bbcbf-7378-4ec2-a5e2-7a29d93e4779</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>parody_forum</RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>parody_forum</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="config.php" />
+    <Compile Include="forum\config.php" />
+    <Compile Include="forum\index.php" />
+    <Compile Include="index.php" />
+    <Compile Include="system\core\action.php" />
+    <Compile Include="system\core\controller.php" />
+    <Compile Include="system\core\loader.php" />
+    <Compile Include="system\core\model.php" />
+    <Compile Include="system\core\registry.php" />
+    <Compile Include="system\startup.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="forum\" />
+    <Folder Include="forum\control\" />
+    <Folder Include="forum\model\" />
+    <Folder Include="forum\view\" />
+    <Folder Include="system\" />
+    <Folder Include="system\core\" />
+    <Folder Include="system\library\" />
+  </ItemGroup>
+</Project>
